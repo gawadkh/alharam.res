@@ -14,9 +14,10 @@ body {
   padding: 30px 15px;
 }
 
-.logo img {
-  width: 240px;
-  max-width: 120%; /* للشاشات الصغيرة */
+.logo img (
+  width: 180px;
+  height: auto;
+  max-width: 100%; /* للشاشات الصغيرة */
 }
 
 /* كلمة Menu داخل إطار ذهبي */
