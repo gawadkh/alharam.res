@@ -16,6 +16,7 @@ body {
 
 .logo img {
   width: 180px;
+  hight: auto;
   max-width: 100%;
 }
 
