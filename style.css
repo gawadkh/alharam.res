@@ -2,33 +2,44 @@ body {
   font-family: "Tahoma", sans-serif;
   margin: 0;
   direction: rtl;
-  background: #ffffff url('images/food-icons.png') repeat; /* خلفية بيضاء مع رموز */
+  background: url('images/background.jpg') repeat; /* الخلفية البيضاء كصورة */
   color: #333;
   text-align: center;
 }
 
-/* القسم العلوي */
-header {
-  padding: 30px;
+/* القسم العلوي بخلفية سوداء */
+.top-section {
+  background: #000;
+  color: #fff;
+  padding: 30px 15px;
 }
 
 .logo img {
   width: 120px;
+  max-width: 40%; /* للشاشات الصغيرة */
 }
 
-/* الشريط الأسود */
-.black-bar {
-  background: #000;
-  color: #fff;
-  padding: 15px;
+/* كلمة Menu داخل إطار ذهبي */
+.menu-title {
+  margin: 20px auto;
+  display: inline-block;
+  border: 3px solid #b8860b; /* ذهب غامق */
+  padding: 10px 20px;
+  border-radius: 8px;
+  background: #fff;
+}
+.menu-title h3 {
+  margin: 0;
+  color: #b8860b;
+  font-weight: bold;
 }
 
 /* القائمة */
 .menu {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-  gap: 30px;
-  padding: 40px;
+  gap: 20px;
+  padding: 20px;
 }
 
 .frame {
@@ -36,12 +47,17 @@ header {
   border-radius: 10px;
   padding: 10px;
   background: #fff;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.frame:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 15px gold;
 }
 
 .frame img {
   width: 100%;
-  height: 160px;
-  object-fit: cover;
+  height: auto;
   border-radius: 8px;
 }
 
@@ -54,10 +70,11 @@ header {
 /* الفوتر */
 footer {
   background: #f0f0f0;
-  padding: 20px;
+  padding: 15px;
   display: flex;
   justify-content: center;
-  gap: 25px;
+  gap: 20px;
+  flex-wrap: wrap; /* حتى يتناسب مع الهواتف */
 }
 
 footer .icon img {
@@ -72,4 +89,28 @@ footer .icon img {
 
 footer .icon img:hover {
   transform: scale(1.2);
+}
+
+/* تحسينات للهواتف */
+@media (max-width: 600px) {
+  .logo img {
+    width: 80px;
+  }
+
+  .menu {
+    grid-template-columns: 1fr; /* طبق واحد في كل صف */
+  }
+
+  .frame img {
+    height: auto;
+  }
+
+  footer {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  footer .icon img {
+    margin: 10px 0;
+  }
 }
