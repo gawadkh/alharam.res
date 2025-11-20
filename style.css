@@ -2,7 +2,7 @@ body {
   font-family: "Tahoma", sans-serif;
   margin: 0;
   direction: rtl;
-  background: url('images/background.jpg') repeat; /* الخلفية البيضاء كصورة */
+  background: url('images/background.png') repeat; /* الخلفية البيضاء كصورة */
   color: #333;
   text-align: center;
 }
