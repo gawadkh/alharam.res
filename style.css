@@ -15,8 +15,8 @@ body {
 }
 
 .logo img {
-  width: 120px;
-  max-width: 40%; /* للشاشات الصغيرة */
+  width: 180px;
+  max-width: 60%; /* للشاشات الصغيرة */
 }
 
 /* كلمة Menu داخل إطار ذهبي */
