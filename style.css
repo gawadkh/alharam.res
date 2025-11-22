@@ -15,9 +15,9 @@ body {
 }
 
 .logo img {
-  width: 800px;
+  width: 600px;
   hight: auto;
-  max-width: 200%;
+  max-width: 120%;
 }
 
 /* عنوان القائمة */
@@ -96,7 +96,6 @@ footer .icon img:hover {
 @media (max-width: 600px) {
   .logo img {
     width:200px;
-    hight:300px;
   }
 
   .menu {
