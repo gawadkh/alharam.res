@@ -96,7 +96,7 @@ footer .icon img:hover {
 @media (max-width: 600px) {
   .logo img {
     width:400px;
-    hight:120%;
+    hight:600px;
   }
 
   .menu {
