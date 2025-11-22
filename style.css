@@ -93,9 +93,9 @@ footer .icon img:hover {
 }
 
 /* تحسينات للهواتف */
-@media (max-width: 1200px) {
+@media (max-width: 600px) {
   .logo img {
-    width:600px;
+    width:400px;
     hight:auto;
   }
 
