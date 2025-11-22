@@ -95,8 +95,8 @@ footer .icon img:hover {
 /* تحسينات للهواتف */
 @media (max-width: 600px) {
   .logo img {
-    width:400px;
-    hight:600px;
+    width:200px;
+    hight:300px;
   }
 
   .menu {
